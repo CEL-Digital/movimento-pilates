@@ -42,13 +42,13 @@ export default function Hero() {
             </div>
             <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-2">
-                <Check className="h-4 w-4 text-accent" /> Desde 2021
+                <Check className="h-4 w-4 text-accent" /> Equilíbrio
               </span>
               <span className="inline-flex items-center gap-2">
-                <Check className="h-4 w-4 text-accent" /> Até 12 alunos por aula
+                <Check className="h-4 w-4 text-accent" /> Força
               </span>
               <span className="inline-flex items-center gap-2">
-                <Check className="h-4 w-4 text-accent" /> Avaliação postural
+                <Check className="h-4 w-4 text-accent" /> Bem-estar
               </span>
             </div>
           </div>

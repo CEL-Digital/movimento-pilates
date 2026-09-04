@@ -3,29 +3,51 @@ import { Check } from "lucide-react";
 
 export default function Plans() {
     
-    const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20de%20Pilates.";
+    const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20do%20estúdio.";
 
     const planos = [
     {
-        nome: "Trimestral",
+        nome: "Plano Mensal",
         destaque: false,
         resumo: "3 meses de acompanhamento contínuo",
         itens: [
-        "1x, 2x ou 3x por semana",
-        "Avaliação postural inclusa",
-        "Plano de treino individual",
-        "Reposição de aulas combinada",
+        "Plano com 1 aula por semana",
+        "Plano com 2 aula por semana",
+        "Plano com 3 aula por semana",
+        "Pix & Dinheiro",
         ],
     },
     {
-        nome: "Semestral",
+        nome: "Plano Trimestral",
+        destaque: false,
+        resumo: "3 meses de acompanhamento contínuo",
+        itens: [
+        "Plano com 1 aula por semana",
+        "Plano com 2 aula por semana",
+        "Plano com 3 aula por semana",
+        "3x - Cartão de Crédito",
+        ],
+    },
+    {
+        nome: "Plano Semestral",
         destaque: true,
         resumo: "6 meses — melhor custo-benefício",
         itens: [
-        "Todas as vantagens do trimestral",
-        "Melhor valor por aula",
-        "Reavaliação periódica",
-        "Prioridade na escolha de horários",
+        "Plano com 1 aula por semana",
+        "Plano com 2 aula por semana",
+        "Plano com 3 aula por semana",
+        "6x - Cartão de Crédito",
+        ],
+    },
+    {
+        nome: "Experiência Avulsa",
+        destaque: false,
+        resumo: "Aula avulsa",
+        itens: [
+        "Atendimento personalizado",
+        "Experiência do pilates",
+        "Plano sem fidelidade",
+        "Pix & Dinheiro",
         ],
     },
     ];
@@ -61,7 +83,7 @@ export default function Plans() {
                       Mais escolhido
                     </span>
                   )}
-                  <h3 className="font-display text-2xl font-semibold">Plano {p.nome}</h3>
+                  <h3 className="font-display text-2xl font-semibold">{p.nome}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.resumo}</p>
                   <ul className="mt-6 space-y-3 text-sm">
                     {p.itens.map((i) => (

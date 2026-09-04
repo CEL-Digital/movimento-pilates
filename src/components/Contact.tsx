@@ -14,7 +14,7 @@ import {
 export default function Contact() {
 
     const [form, setForm] = useState({ nome: "", tel: "", msg: "" });
-    const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20de%20Pilates.";
+    const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20estudio.";
 
     const enviar = (e: React.FormEvent) => {
         e.preventDefault();
@@ -23,7 +23,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contato" className="scroll-mt-5 py-20">
+        <section id="contato" className="scroll-mt-10 py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-2">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">

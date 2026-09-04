@@ -6,18 +6,55 @@ import {
   DialogTitle,
   DialogDescription,
 } from "../../@/components/ui/dialog";
+import { MessageCircle, } from "lucide-react";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const [modalOpen, setModalOpen] = useState<"privacy" | "terms" | null>(null);
+  const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações.";
+  const INSTAGRAM = "https://www.instagram.com/movimentopilates2021?igsi=cHVzMDNtODFtY2Fi";
+  const FACE = "https://www.facebook.com/people/movimentopilates2021/100065328676750/?mibextid=ZbWKwL";
 
   return (
     <footer className="border-t border-border/40 bg-card/30 py-12 text-sm text-muted-foreground">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 sm:flex-row">
         {/* Direitos Autorais */}
-        <p className="text-center sm:text-left">
-          © {new Date().getFullYear()} Movimento Pilates - Talita Silveira. Todos os direitos reservados.
-        </p>
-
+        <div className="flex gap-4 items-center">
+            
+            {/* Ícones Sociais Minimalistas */}
+            <p className="text-center sm:text-left">
+            © {new Date().getFullYear()} Movimento Pilates - Talita Silveira. Todos os direitos reservados.
+            </p>
+            <div className="flex items-center gap-3">
+                <a
+                    href={INSTAGRAM}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Siga no Instagram"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+                    >
+                    <FaInstagram className="h-4 w-4" />
+                </a>
+                <a
+                    href={FACE}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contato via WhatsApp"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+                    >
+                    <FaFacebook className="h-4 w-4" />
+                </a>
+                <a
+                    href={WHATS}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Contato via WhatsApp"
+                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+                    >
+                    <FaWhatsapp className="h-4 w-4" />
+                </a>
+            </div>
+        </div>
         {/* Links de Políticas e Termos */}
         <div className="flex flex-wrap justify-center gap-6">
           <button
@@ -79,6 +116,7 @@ export default function Footer() {
           </div>
         </DialogContent>
       </Dialog>
+
 
       {/* MODAL: TERMOS DE USO */}
       <Dialog open={modalOpen === "terms"} onOpenChange={() => setModalOpen(null)}>

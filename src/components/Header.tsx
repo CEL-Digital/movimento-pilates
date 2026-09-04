@@ -9,7 +9,7 @@ import {
   SheetTrigger,
 } from "../../@/components/ui/sheet";
 
-const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20de%20Pilates.";
+const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20o%20estudio.";
 
 const nav = [
   { href: "#sobre", label: "Sobre" },
@@ -39,12 +39,7 @@ export function Header() {
             height={150}
             className="h-10 w-auto rounded-lg sm:h-11"
           />
-          <span className="hidden font-display text-base font-semibold leading-tight sm:block">
-            Movimento Pilates
-            <span className="block text-[11px] font-normal uppercase tracking-[0.2em] text-muted-foreground">
-              Talita Silveira · Pirituba
-            </span>
-          </span>
+          
         </a>
 
         {/* NAVEGAÇÃO DESKTOP (Apenas telas grandes - lg) */}

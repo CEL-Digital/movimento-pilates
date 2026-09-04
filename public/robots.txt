@@ -1,0 +1,10 @@
+# Permitir que todos os robôs de busca indexem o site
+User-agent: *
+Allow: /
+
+# Bloquear diretórios internos ou privados (opcional)
+Disallow: /api/
+Disallow: /admin/
+
+# Caminho para o seu mapa do site (Sitemap)
+Sitemap: https://www.seudominio.com.br/sitemap.xml
