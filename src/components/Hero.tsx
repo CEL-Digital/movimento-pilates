@@ -19,14 +19,11 @@ export default function Hero() {
               <Users className="h-3.5 w-3.5" /> Estúdio de pilates em pirituba
             </span>
             <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              Recupere sua mobilidade e viva{" "}
-              <span className="text-primary">sem dores</span> com acompanhamento
-              de perto
+              Pilates, o movimento que {" "}
+              <span className="text-primary">transforma</span> vidas!
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Pilates para condicionamento físico, pós-fisioterapia e alta performance.
-              Turmas reduzidas de até 12 alunos, com no máximo 4 alunos por professor —
-              treino personalizado, no seu ritmo, em um ambiente calmo e exclusivo.
+              Recupere sua mobilidade e viva sem dores com acompanhamento de perto. Atendimento humanizado e estrutura completa em Pirituba.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full px-7 text-base shadow-[var(--shadow-soft)]">

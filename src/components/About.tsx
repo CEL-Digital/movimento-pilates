@@ -1,26 +1,15 @@
 import aboutImg from "../assets/studio-lateral.webp";
-// Importando os ícones do Lucide dentro do react-icons
-import { LuUsers, LuSunMedium } from "react-icons/lu";
-import { GiHealthNormal } from "react-icons/gi";
+import { LuCalendar, LuUsers, LuSunMedium } from "react-icons/lu";
 
 export function About() {
   const highlights = [
-    {
-      icon: GiHealthNormal,
-      label: "avaliação postural e clínica",
-    },
-    {
-      icon: LuUsers,
-      label: "Até 4 alunos por profissional",
-    },
-    {
-      icon: LuSunMedium,
-      label: "Ambiente climatizado",
-    },
+    { icon: LuCalendar, label: "Fundado em 2021 (35m² ao Studio Atual)" },
+    { icon: LuUsers, label: "Equipe de 10 Profissionais Unidos" },
+    { icon: LuSunMedium, label: "Atendimento Humanizado & Climatizado" },
   ];
 
   return (
-    <section id="sobre" className="bg-secondary/60 scroll-mt-20 py-20">
+    <section id="sobre" className="scroll-mt-10 bg-secondary/60 py-20">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:px-8 lg:grid-cols-2">
         <img
           src={aboutImg}
@@ -32,29 +21,40 @@ export function About() {
         />
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-            Quem somos
+            Nossa História
           </p>
           <h2 className="mt-4 font-display text-3xl font-semibold leading-tight sm:text-4xl">
-            Um studio nascido do cuidado com cada aluno
+            Uma trajetória construída com amor, dedicação e sonhos
           </h2>
-          <p className="mt-5 leading-relaxed text-muted-foreground">
-            O <strong className="text-foreground">Movimento Pilates - Talita Silveira</strong> nasceu em abril de 2021 com a proposta de aumentar a qualidade de vida e bem-estar com a prática do pilates — atenção real, do primeiro contato ao último exercício.
-          </p>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Trabalhamos com o Método Pilates Contemporâneo e o Pilates Funcional, nossas aulas tem duração de 45 minutos, sendo somente Pilates. A equipe é composta de dois a três professores por aula. As aulas tem por objetivo atender as necessidades do aluno, sejam elas patológicas, estéticas ou outras. Cada aluno tem um repertório de aula próprio, os professores realizam a avaliação postural e clínica na primeira aula, e com base nas informações e laudos médicos, produzimos os repertórios de aula.
-          </p>
+          
+          <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            <p>
+              Toda trajetória é construída por desafios, aprendizados, sonhos e muita dedicação. No início, em abril de 2021, o Studio era uma pequena sala de apenas 35 m², com quatro equipamentos. Mal cabiam os alunos e a professora, mas era um espaço construído com muito carinho e amor pelo Pilates.
+            </p>
+            <p>
+              Com o tempo, aquele sonho cresceu. Após um ano e seis meses, mudamos para uma sala maior. Hoje, somos uma equipe de dez profissionais unidos pelo mesmo propósito: oferecer um atendimento de qualidade, acolhedor e humanizado.
+            </p>
+          </div>
 
-          {/* Cards com react-icons */}
+          {/* Citação destacada */}
+          <blockquote className="mt-6 border-l-2 border-primary pl-4 font-display text-base font-medium italic text-foreground">
+            "O que começou como um sonho, hoje é uma realidade. E esse é apenas o começo."
+            <span className="mt-1 block text-xs font-normal non-italic text-muted-foreground">
+              — Studio Movimento Pilates
+            </span>
+          </blockquote>
+
+          {/* Cards de Destaque */}
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {highlights.map((item) => {
               const Icon = item.icon;
               return (
                 <div
                   key={item.label}
-                  className="flex flex-col items-start rounded-2xl border border-border/60 bg-card p-5 shadow-sm"
+                  className="flex flex-col items-start rounded-2xl border border-border/60 bg-card p-4 shadow-sm"
                 >
-                  <Icon className="h-6 w-6 text-primary" />
-                  <p className="mt-2 text-sm font-medium leading-snug text-muted-foreground">
+                  <Icon className="h-5 w-5 text-primary" />
+                  <p className="mt-2 text-xs font-medium leading-snug text-muted-foreground sm:text-sm">
                     {item.label}
                   </p>
                 </div>

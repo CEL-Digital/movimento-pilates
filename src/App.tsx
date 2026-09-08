@@ -1,6 +1,7 @@
 import Hero from "./components/Hero"
 import { Header } from "./components/Header"
 import { About } from "./components/About"
+import { Reviews } from "./components/Reviews"
 import Services from "./components/Services"
 import Plans from "./components/Plans"
 import Team from "./components/Team"
@@ -18,6 +19,7 @@ export default function App() {
       <Services />
       <Plans />
       <Team />
+      <Reviews />
       <Faq />
       <Contact />
       <Footer />
