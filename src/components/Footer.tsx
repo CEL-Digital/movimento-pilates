@@ -6,7 +6,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from "../../@/components/ui/dialog";
-import { MessageCircle, } from "lucide-react";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
