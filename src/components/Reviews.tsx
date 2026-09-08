@@ -7,7 +7,6 @@ import {
 } from "../../@/components/ui/carousel";
 import { LuStar } from "react-icons/lu";
 
-// Selecione as 10 melhores avaliações do Google
 const reviews = [
   {
     id: 1,
@@ -117,7 +116,7 @@ export function Reviews() {
         {/* BOTÃO PARA O GOOGLE REVIEWS REAL */}
         <div className="mt-10 text-center">
           <a
-            href="https://maps.google.com" // Coloque o link direto do perfil do Google do Studio
+            href="https://share.google/gQWh614YjecH3gT7c"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
