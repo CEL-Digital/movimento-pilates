@@ -10,49 +10,52 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const [modalOpen, setModalOpen] = useState<"privacy" | "terms" | null>(null);
-  const WHATS = "https://wa.me/5511968165880?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações.";
-  const INSTAGRAM = "https://www.instagram.com/movimentopilates2021?igsi=cHVzMDNtODFtY2Fi";
-  const FACE = "https://www.facebook.com/people/movimentopilates2021/100065328676750/?mibextid=ZbWKwL";
+  const WHATS =
+    "https://wa.me/5511968165880?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações.";
+  const INSTAGRAM =
+    "https://www.instagram.com/movimentopilates2021?igsi=cHVzMDNtODFtY2Fi";
+  const FACE =
+    "https://www.facebook.com/people/movimentopilates2021/100065328676750/?mibextid=ZbWKwL";
 
   return (
     <footer className="border-t border-border/40 bg-card/30 py-12 text-sm text-muted-foreground">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 sm:flex-row">
         {/* Direitos Autorais */}
         <div className="flex gap-4 items-center">
-            
-            {/* Ícones Sociais Minimalistas */}
-            <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} Movimento Pilates - Talita Silveira. Todos os direitos reservados.
-            </p>
-            <div className="flex items-center gap-3">
-                <a
-                    href={INSTAGRAM}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Siga no Instagram"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
-                    >
-                    <FaInstagram className="h-4 w-4" />
-                </a>
-                <a
-                    href={FACE}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Contato via WhatsApp"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
-                    >
-                    <FaFacebook className="h-4 w-4" />
-                </a>
-                <a
-                    href={WHATS}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Contato via WhatsApp"
-                    className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
-                    >
-                    <FaWhatsapp className="h-4 w-4" />
-                </a>
-            </div>
+          {/* Ícones Sociais Minimalistas */}
+          <p className="text-center sm:text-left">
+            © {new Date().getFullYear()} Movimento Pilates - Talita Silveira.
+            Todos os direitos reservados.
+          </p>
+          <div className="flex items-center gap-3">
+            <a
+              href={INSTAGRAM}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Siga no Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+            >
+              <FaInstagram className="h-4 w-4" />
+            </a>
+            <a
+              href={FACE}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contato via WhatsApp"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+            >
+              <FaFacebook className="h-4 w-4" />
+            </a>
+            <a
+              href={WHATS}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contato via WhatsApp"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-card/60 text-muted-foreground transition-colors hover:border-primary hover:bg-primary/10 hover:text-primary"
+            >
+              <FaWhatsapp className="h-4 w-4" />
+            </a>
+          </div>
         </div>
         {/* Links de Políticas e Termos */}
         <div className="flex flex-wrap justify-center gap-6">
@@ -72,7 +75,10 @@ export default function Footer() {
       </div>
 
       {/* MODAL: POLÍTICA DE PRIVACIDADE */}
-      <Dialog open={modalOpen === "privacy"} onOpenChange={() => setModalOpen(null)}>
+      <Dialog
+        open={modalOpen === "privacy"}
+        onOpenChange={() => setModalOpen(null)}
+      >
         <DialogContent className="max-h-[80vh] overflow-y-auto sm:max-w-2xl">
           <DialogHeader>
             <DialogTitle className="font-display text-2xl font-semibold">
@@ -85,53 +91,86 @@ export default function Footer() {
 
           <div className="space-y-4 text-xs leading-relaxed text-muted-foreground sm:text-sm">
             <p>
-              O <strong>Movimento Pilates - Talita Silveira</strong> valoriza a privacidade de seus alunos e visitantes. Esta política descreve como tratamos as informações coletadas em nosso site.
+              O <strong>Movimento Pilates - Talita Silveira</strong> valoriza a
+              privacidade de seus alunos e visitantes. Esta política descreve
+              como tratamos as informações coletadas em nosso site.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">1. Coleta de Informações</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              1. Coleta de Informações
+            </h4>
             <p>
-              Coletamos informações pessoais quando você nos fornece voluntariamente ao entrar em contato via WhatsApp ou formulário (ex: nome, telefone e preferências de horário).
+              Coletamos informações pessoais quando você nos fornece
+              voluntariamente ao entrar em contato via WhatsApp ou formulário
+              (ex: nome, telefone e preferências de horário).
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">2. Uso de Cookies e Google Analytics</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              2. Uso de Cookies e Google Analytics
+            </h4>
             <p>
-              Utilizamos cookies e tecnologias semelhantes para analisar o tráfego do site e melhorar sua experiência de navegação através do <strong>Google Analytics</strong>. Esses dados são anônimos e incluem informações como páginas visitadas, tempo de permanência e tipo de dispositivo.
+              Utilizamos cookies e tecnologias semelhantes para analisar o
+              tráfego do site e melhorar sua experiência de navegação através do{" "}
+              <strong>Google Analytics</strong>. Esses dados são anônimos e
+              incluem informações como páginas visitadas, tempo de permanência e
+              tipo de dispositivo.
             </p>
             <p>
-              Respeitamos a sua privacidade e aplicamos o <strong>Google Consent Mode v2</strong>: nenhum cookie analítico é ativado sem que você clique em "Aceitar todos" no nosso aviso de cookies.
+              Respeitamos a sua privacidade e aplicamos o{" "}
+              <strong>Google Consent Mode v2</strong>: nenhum cookie analítico é
+              ativado sem que você clique em "Aceitar todos" no nosso aviso de
+              cookies.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">3. Finalidade dos Dados</h4>
-            <p>
-              As informações coletadas são utilizadas exclusivamente para:
-            </p>
+            <h4 className="font-semibold text-foreground text-base">
+              3. Finalidade dos Dados
+            </h4>
+            <p>As informações coletadas são utilizadas exclusivamente para:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Agendamento de aulas experimentais e avaliações posturais;</li>
+              <li>
+                Agendamento de aulas experimentais e avaliações posturais;
+              </li>
               <li>Esclarecimento de dúvidas sobre os planos e serviços;</li>
-              <li>Análise estatística do uso do site para melhoria contínua de desempenho.</li>
+              <li>
+                Análise estatística do uso do site para melhoria contínua de
+                desempenho.
+              </li>
             </ul>
 
-            <h4 className="font-semibold text-foreground text-base">4. Gerenciamento de Consentimento</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              4. Gerenciamento de Consentimento
+            </h4>
             <p>
-              Você pode alterar ou revogar suas preferências de cookies a qualquer momento limpando os dados de navegação e armazenamento local (localStorage) do seu navegador.
+              Você pode alterar ou revogar suas preferências de cookies a
+              qualquer momento limpando os dados de navegação e armazenamento
+              local (localStorage) do seu navegador.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">5. Compartilhamento de Dados</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              5. Compartilhamento de Dados
+            </h4>
             <p>
-              Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing ou anúncios direcionados.
+              Não vendemos, alugamos nem compartilhamos seus dados pessoais com
+              terceiros para fins de marketing ou anúncios direcionados.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">6. Seus Direitos (LGPD)</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              6. Seus Direitos (LGPD)
+            </h4>
             <p>
-              Em conformidade com a LGPD (Lei Geral de Proteção de Dados), você pode solicitar a alteração, confirmação ou exclusão dos seus dados cadastrais a qualquer momento entrando em contato conosco.
+              Em conformidade com a LGPD (Lei Geral de Proteção de Dados), você
+              pode solicitar a alteração, confirmação ou exclusão dos seus dados
+              cadastrais a qualquer momento entrando em contato conosco.
             </p>
           </div>
         </DialogContent>
       </Dialog>
 
-
       {/* MODAL: TERMOS DE USO */}
-      <Dialog open={modalOpen === "terms"} onOpenChange={() => setModalOpen(null)}>
+      <Dialog
+        open={modalOpen === "terms"}
+        onOpenChange={() => setModalOpen(null)}
+      >
         <DialogContent className="max-h-[80vh] overflow-y-auto sm:max-w-2xl">
           <DialogHeader>
             <DialogTitle className="font-display text-2xl font-semibold">
@@ -143,24 +182,40 @@ export default function Footer() {
           </DialogHeader>
 
           <div className="space-y-4 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-            <h4 className="font-semibold text-foreground text-base">1. Aceitação dos Termos</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              1. Aceitação dos Termos
+            </h4>
             <p>
-              Ao utilizar este site, você concorda em cumprir e respeitar os termos e condições descritos nesta página.
+              Ao utilizar este site, você concorda em cumprir e respeitar os
+              termos e condições descritos nesta página.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">2. Serviços do Studio</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              2. Serviços do Studio
+            </h4>
             <p>
-              As informações sobre horários, turmas, planos e valores exibidas neste site são informativas e sujeitas a alterações sem aviso prévio. A confirmação do agendamento depende de disponibilidade de vagas no studio.
+              As informações sobre horários, turmas, planos e valores exibidas
+              neste site são informativas e sujeitas a alterações sem aviso
+              prévio. A confirmação do agendamento depende de disponibilidade de
+              vagas no studio.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">3. Avaliação Física e Saúde</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              3. Avaliação Física e Saúde
+            </h4>
             <p>
-              A prática do Pilates exige acompanhamento profissional. Recomendamos que todos os alunos informem previamente sobre limitações físicas, cirurgias recentes ou dores crônicas durante a avaliação presencial.
+              A prática do Pilates exige acompanhamento profissional.
+              Recomendamos que todos os alunos informem previamente sobre
+              limitações físicas, cirurgias recentes ou dores crônicas durante a
+              avaliação presencial.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">4. Propriedade Intelectual</h4>
+            <h4 className="font-semibold text-foreground text-base">
+              4. Propriedade Intelectual
+            </h4>
             <p>
-              Todo o conteúdo deste site (textos, logotipos, imagens e marca) é de propriedade exclusiva do Movimento Pilates - Talita Silveira.
+              Todo o conteúdo deste site (textos, logotipos, imagens e marca) é
+              de propriedade exclusiva do Movimento Pilates - Talita Silveira.
             </p>
           </div>
         </DialogContent>

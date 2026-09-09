@@ -13,12 +13,19 @@ export default function Faq() {
       a: (
         <div className="space-y-3">
           <p>
-            O Pilates é um método de exercícios desenvolvido por Joseph Pilates, na década de 1920, originalmente chamado de “Contrologia”. O método tem como princípio a integração entre corpo e mente, promovendo maior consciência corporal, controle dos movimentos e qualidade de vida.
+            O Pilates é um método de exercícios desenvolvido por Joseph Pilates,
+            na década de 1920, originalmente chamado de “Contrologia”. O método
+            tem como princípio a integração entre corpo e mente, promovendo
+            maior consciência corporal, controle dos movimentos e qualidade de
+            vida.
           </p>
           <p>
-            Por meio de exercícios realizados de forma consciente e precisa, o Pilates trabalha o fortalecimento muscular, a flexibilidade, o equilíbrio, a mobilidade e a postura, respeitando as necessidades e os limites de cada pessoa.
+            Por meio de exercícios realizados de forma consciente e precisa, o
+            Pilates trabalha o fortalecimento muscular, a flexibilidade, o
+            equilíbrio, a mobilidade e a postura, respeitando as necessidades e
+            os limites de cada pessoa.
           </p>
-          
+
           <div className="pt-2">
             <p className="font-medium text-foreground text-xs uppercase tracking-wider mb-2">
               Princípios essenciais do método:
@@ -43,7 +50,11 @@ export default function Faq() {
           </div>
 
           <p className="pt-1">
-            No Studio Movimento Pilates, cada exercício é orientado de forma individualizada, buscando proporcionar uma prática segura, consciente e eficiente para diferentes objetivos e níveis de condicionamento. Agende sua aula experimental e venha conhecer o Pilates! ✨
+            No Studio Movimento Pilates, cada exercício é orientado de forma
+            individualizada, buscando proporcionar uma prática segura,
+            consciente e eficiente para diferentes objetivos e níveis de
+            condicionamento. Agende sua aula experimental e venha conhecer o
+            Pilates! ✨
           </p>
         </div>
       ),
@@ -54,39 +65,50 @@ export default function Faq() {
       a: (
         <div className="space-y-3">
           <p>
-            Os benefícios do Pilates são diversos e podem contribuir para uma vida mais ativa, saudável e equilibrada. Entre os principais, destacam-se:
+            Os benefícios do Pilates são diversos e podem contribuir para uma
+            vida mais ativa, saudável e equilibrada. Entre os principais,
+            destacam-se:
           </p>
           <ul className="grid gap-1.5 pl-2 text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Melhora da postura e consciência corporal
+              <span className="text-primary">•</span> Melhora da postura e
+              consciência corporal
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Aumento da flexibilidade e mobilidade
+              <span className="text-primary">•</span> Aumento da flexibilidade e
+              mobilidade
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Fortalecimento e resistência muscular
+              <span className="text-primary">•</span> Fortalecimento e
+              resistência muscular
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Melhora do equilíbrio e coordenação
+              <span className="text-primary">•</span> Melhora do equilíbrio e
+              coordenação
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Aprimoramento da respiração
+              <span className="text-primary">•</span> Aprimoramento da
+              respiração
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Redução de tensões e desconfortos
+              <span className="text-primary">•</span> Redução de tensões e
+              desconfortos
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">•</span> Melhora do condicionamento físico
+              <span className="text-primary">•</span> Melhora do condicionamento
+              físico
             </li>
             <li className="flex items-center gap-2">
               <span className="text-primary">•</span> Prevenção de lesões
             </li>
             <li className="flex items-center gap-2 sm:col-span-2">
-              <span className="text-primary">•</span> Promoção do bem-estar físico e mental
+              <span className="text-primary">•</span> Promoção do bem-estar
+              físico e mental
             </li>
           </ul>
           <p className="font-medium text-primary pt-1">
-            E muito mais! O Pilates respeita as características e objetivos de cada pessoa.
+            E muito mais! O Pilates respeita as características e objetivos de
+            cada pessoa.
           </p>
         </div>
       ),

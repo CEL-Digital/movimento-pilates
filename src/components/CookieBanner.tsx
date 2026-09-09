@@ -62,10 +62,12 @@ export function CookieBanner() {
     >
       <div className="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
         <p className="text-xs leading-relaxed text-muted-foreground sm:text-sm">
-          Nós utilizamos cookies e tecnologias semelhantes para melhorar a sua experiência de navegação em nosso site. Para saber mais, acesse{" "}
+          Nós utilizamos cookies e tecnologias semelhantes para melhorar a sua
+          experiência de navegação em nosso site. Para saber mais, acesse{" "}
           <span className="font-medium text-foreground underline underline-offset-2">
             Política de Privacidade
-          </span> no rodapé.
+          </span>{" "}
+          no rodapé.
         </p>
 
         <div className="flex w-full shrink-0 items-center justify-center gap-2 sm:w-auto">

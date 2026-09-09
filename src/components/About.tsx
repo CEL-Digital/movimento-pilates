@@ -26,19 +26,27 @@ export function About() {
           <h2 className="mt-4 font-display text-3xl font-semibold leading-tight sm:text-4xl">
             Uma trajetória construída com amor, dedicação e sonhos
           </h2>
-          
+
           <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
             <p>
-              Toda trajetória é construída por desafios, aprendizados, sonhos e muita dedicação. No início, em abril de 2021, o Studio era uma pequena sala de apenas 35 m², com quatro equipamentos. Mal cabiam os alunos e a professora, mas era um espaço construído com muito carinho e amor pelo Pilates.
+              Toda trajetória é construída por desafios, aprendizados, sonhos e
+              muita dedicação. No início, em abril de 2021, o Studio era uma
+              pequena sala de apenas 35 m², com quatro equipamentos. Mal cabiam
+              os alunos e a professora, mas era um espaço construído com muito
+              carinho e amor pelo Pilates.
             </p>
             <p>
-              Com o tempo, aquele sonho cresceu. Após um ano e seis meses, mudamos para uma sala maior. Hoje, somos uma equipe de dez profissionais unidos pelo mesmo propósito: oferecer um atendimento de qualidade, acolhedor e humanizado.
+              Com o tempo, aquele sonho cresceu. Após um ano e seis meses,
+              mudamos para uma sala maior. Hoje, somos uma equipe de dez
+              profissionais unidos pelo mesmo propósito: oferecer um atendimento
+              de qualidade, acolhedor e humanizado.
             </p>
           </div>
 
           {/* Citação destacada */}
           <blockquote className="mt-6 border-l-2 border-primary pl-4 font-display text-base font-medium italic text-foreground">
-            "O que começou como um sonho, hoje é uma realidade. E esse é apenas o começo."
+            "O que começou como um sonho, hoje é uma realidade. E esse é apenas
+            o começo."
             <span className="mt-1 block text-xs font-normal non-italic text-muted-foreground">
               — Studio Movimento Pilates
             </span>

@@ -68,7 +68,6 @@ export function Reviews() {
   return (
     <section id="avaliacoes" className="scroll-mt-20 bg-card/40 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        
         {/* CABEÇALHO COM PROVA SOCIAL DOS +100 ALUNOS */}
         <div className="flex flex-col items-center text-center">
           <span className="inline-flex items-center gap-1 text-amber-400">
@@ -89,7 +88,10 @@ export function Reviews() {
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
             <CarouselContent className="-ml-4">
               {reviews.map((r) => (
-                <CarouselItem key={r.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem
+                  key={r.id}
+                  className="pl-4 md:basis-1/2 lg:basis-1/3"
+                >
                   <div className="flex h-full flex-col justify-between rounded-2xl border border-border/60 bg-background p-6 shadow-sm">
                     <div>
                       <div className="flex text-amber-400">
@@ -124,7 +126,6 @@ export function Reviews() {
             Ver todas as 100+ avaliações diretamente no Google →
           </a>
         </div>
-
       </div>
     </section>
   );
