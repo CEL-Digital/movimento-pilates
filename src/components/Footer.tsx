@@ -90,27 +90,40 @@ export default function Footer() {
 
             <h4 className="font-semibold text-foreground text-base">1. Coleta de Informações</h4>
             <p>
-              Coletamos informações pessoais apenas quando você nos fornece voluntariamente ao entrar em contato via WhatsApp ou formulário de agendamento (ex: nome, telefone e preferências de horário).
+              Coletamos informações pessoais quando você nos fornece voluntariamente ao entrar em contato via WhatsApp ou formulário (ex: nome, telefone e preferências de horário).
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">2. Uso das Informações</h4>
+            <h4 className="font-semibold text-foreground text-base">2. Uso de Cookies e Google Analytics</h4>
             <p>
-              As informações fornecidas são utilizadas exclusivamente para:
+              Utilizamos cookies e tecnologias semelhantes para analisar o tráfego do site e melhorar sua experiência de navegação através do <strong>Google Analytics</strong>. Esses dados são anônimos e incluem informações como páginas visitadas, tempo de permanência e tipo de dispositivo.
+            </p>
+            <p>
+              Respeitamos a sua privacidade e aplicamos o <strong>Google Consent Mode v2</strong>: nenhum cookie analítico é ativado sem que você clique em "Aceitar todos" no nosso aviso de cookies.
+            </p>
+
+            <h4 className="font-semibold text-foreground text-base">3. Finalidade dos Dados</h4>
+            <p>
+              As informações coletadas são utilizadas exclusivamente para:
             </p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Agendamento de aulas experimentais e avaliações posturais;</li>
               <li>Esclarecimento de dúvidas sobre os planos e serviços;</li>
-              <li>Envio de lembretes ou avisos sobre o funcionamento do studio.</li>
+              <li>Análise estatística do uso do site para melhoria contínua de desempenho.</li>
             </ul>
 
-            <h4 className="font-semibold text-foreground text-base">3. Compartilhamento de Dados</h4>
+            <h4 className="font-semibold text-foreground text-base">4. Gerenciamento de Consentimento</h4>
             <p>
-              Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing.
+              Você pode alterar ou revogar suas preferências de cookies a qualquer momento limpando os dados de navegação e armazenamento local (localStorage) do seu navegador.
             </p>
 
-            <h4 className="font-semibold text-foreground text-base">4. Seus Direitos (LGPD)</h4>
+            <h4 className="font-semibold text-foreground text-base">5. Compartilhamento de Dados</h4>
             <p>
-              Em conformidade com a LGPD (Lei Geral de Proteção de Dados), você pode solicitar a alteração ou exclusão dos seus dados cadastrais a qualquer momento entrando em contato diretamente com nossa equipe.
+              Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing ou anúncios direcionados.
+            </p>
+
+            <h4 className="font-semibold text-foreground text-base">6. Seus Direitos (LGPD)</h4>
+            <p>
+              Em conformidade com a LGPD (Lei Geral de Proteção de Dados), você pode solicitar a alteração, confirmação ou exclusão dos seus dados cadastrais a qualquer momento entrando em contato conosco.
             </p>
           </div>
         </DialogContent>
