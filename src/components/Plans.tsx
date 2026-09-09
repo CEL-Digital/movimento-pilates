@@ -12,8 +12,8 @@ export default function Plans() {
       resumo: "3 meses de acompanhamento contínuo",
       itens: [
         "Plano com 1 aula por semana",
-        "Plano com 2 aula por semana",
-        "Plano com 3 aula por semana",
+        "Plano com 2 aulas por semana",
+        "Plano com 3 aulas por semana",
         "Pix & Dinheiro",
       ],
     },
@@ -23,8 +23,8 @@ export default function Plans() {
       resumo: "3 meses de acompanhamento contínuo",
       itens: [
         "Plano com 1 aula por semana",
-        "Plano com 2 aula por semana",
-        "Plano com 3 aula por semana",
+        "Plano com 2 aulas por semana",
+        "Plano com 3 aulas por semana",
         "3x - Cartão de Crédito",
       ],
     },
@@ -34,8 +34,8 @@ export default function Plans() {
       resumo: "6 meses — melhor custo-benefício",
       itens: [
         "Plano com 1 aula por semana",
-        "Plano com 2 aula por semana",
-        "Plano com 3 aula por semana",
+        "Plano com 2 aulas por semana",
+        "Plano com 3 aulas por semana",
         "6x - Cartão de Crédito",
       ],
     },

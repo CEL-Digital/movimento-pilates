@@ -95,10 +95,25 @@ export default function Contact() {
                 (11) 96816-5880
               </a>
             </p>
-            <p className="mt-4 flex items-start gap-3 text-sm">
+            
+            {/* Bloco de Horários Organizado */}
+            <div className="mt-4 flex items-start gap-3 text-sm">
               <Clock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-              <span>Seg a sex: 7h às 21h</span>
-            </p>
+              <div className="space-y-1">
+                <span className="font-medium text-foreground">Horários de Atendimento:</span>
+                <ul className="space-y-1 text-xs text-muted-foreground sm:text-sm">
+                  <li className="flex justify-between gap-4">
+                    <span>Segunda a Quinta:</span>
+                    <span className="font-medium text-foreground">07h às 12h | 14h às 21h</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span>Sexta-feira:</span>
+                    <span className="font-medium text-foreground">07h às 11h</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             <Button asChild className="mt-6 w-full rounded-full">
               <a href={WHATS} target="_blank" rel="noopener noreferrer">
                 Falar no WhatsApp

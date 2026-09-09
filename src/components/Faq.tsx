@@ -121,7 +121,7 @@ export default function Faq() {
     {
       id: "horarios-disponiveis",
       q: "Quais são os horários disponíveis?",
-      a: "Atendemos de segunda a sexta, em horários da manhã, tarde e início da noite, além de sábados pela manhã. Como as vagas são individuais, confirmamos a disponibilidade do horário desejado no momento do agendamento.",
+      a: "Atendemos de segunda a quintas das 7h as 12h e das 14h as 21h Sexta das 7h as 11h",
     },
     {
       id: "indicacao-medica",

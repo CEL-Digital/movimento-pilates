@@ -3,7 +3,7 @@ import { LuCalendar, LuUsers, LuSunMedium } from "react-icons/lu";
 
 export function About() {
   const highlights = [
-    { icon: LuCalendar, label: "Fundado em 2021 (35m² no Studio Atual)" },
+    { icon: LuCalendar, label: "Fundado em 2021 (110m² no Studio Atual)" },
     { icon: LuUsers, label: "Equipe de 10 Profissionais Unidos" },
     { icon: LuSunMedium, label: "Atendimento Humanizado & Climatizado" },
   ];
