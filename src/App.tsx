@@ -24,8 +24,8 @@ export default function App() {
       <Faq />
       <Contact />
       <Footer />
-      <CookieBanner />
       <WppIcon />
+      <CookieBanner />
     </>
   )
 }
